@@ -1,0 +1,22 @@
+{:new-project
+  {:categories [
+    {:label "Other & In-House Templates"
+     :templates [
+          {:name "LowRes/pixel art Template"
+           :description "Defold template project for lowres/pixel-art games. by britzl"
+           :image "empty.svg"
+           :zip-url "https://github.com/britzl/template-lowres/archive/master.zip"
+           :skip-root? true},
+          {:name "Text-Adventure Template"
+           :description "Text adventure game template for the Defold game engine, utilizing Ink"
+           :image "empty.svg"
+           :zip-url "https://github.com/abadonna/text-adventure-template/archive/refs/heads/main.zip"
+           :skip-root? true},
+          {:name "Britzl Template"
+           :description "Defold template project with some britzl created extensions added"
+           :image "empty.svg"
+           :zip-url "https://github.com/britzl/template-britzl/archive/refs/heads/master.zip"
+           :skip-root? true}]
+    }]
+  }
+}

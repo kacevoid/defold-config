@@ -1,0 +1,78 @@
+/*
+removed percentage based selection on some. Example:
+-df-background-darker: derive(#262626, -5%);
+*/
+
+/*
+-df-background-darker:    derive(#161616);
+-df-background-dark:      derive(#262626);
+-df-background: 					#393939;
+-df-background-light:     derive(#525252);
+-df-background-lighter:   derive(#dde1e6);
+
+-df-component-darker:     derive(#ee5396, -20%);
+-df-component-dark:       derive(#ee5396, -50%);
+-df-component:            #ee5396;
+-df-component-light:      derive(#ee5396, 10%);
+-df-component-lighter:    derive(#ee5396, 20%);
+*/
+
+* {
+  -df-background-darker: derive(#161616, -20%);
+  -df-background-dark: derive(#161616, -10%);
+  -df-background: #161616;
+  -df-background-light: derive(#131313, 10%);
+  -df-background-lighter: derive(#131313, 20%);
+
+  -df-component-darker: derive(#262626, -20%);
+  -df-component-dark: derive(#262626, -10%);
+  -df-component: #262626;
+  -df-component-light: derive(#262626, 10%);
+  -df-component-lighter: derive(#262626), 20%;
+
+  -df-text-dark: derive(#dde1e6);
+  -df-text: #ffffff;
+  -df-text-selected: derive(#F2F4F8);
+
+  /* // Red */
+  -df-defold-red-dark: derive(#ff7eb6, -10%);
+  -df-defold-red: #ff7eb6;
+  -df-defold-red-light: derive(#ff7eb6, 10%);
+
+  /* // Yellow */
+  -df-defold-yellow-dark: derive(#ffeb91, -10%);
+  -df-defold-yellow: #ffeb91;
+  -df-defold-yellow-light: derive(#ffeb91, 10%);
+  -df-defold-yellow-lighter: derive(#ffeb91, 20%);
+
+  /* // Green */
+  -df-defold-green-dark: derive(#08bdba, -10%);
+  -df-defold-green: #08bdba;
+  -df-defold-green-light: derive(#08bdba, 10%);
+  -df-defold-green-lighter: derive(#08bdba, 20%);
+
+  /* // Orange */
+  -df-defold-orange-dark: derive(#FFAB91, -10%);
+  -df-defold-orange: #FFAB91;
+  -df-defold-orange-light: derive(#FFAB91, 10%);
+
+  /* // Blue */
+  -df-defold-blue-dark: derive(#33b1ff, -10%);
+  -df-defold-blue: #33b1ff;
+  -df-defold-blue-light: derive(#33b1ff, 10%);
+  -df-defold-blue-lighter: derive(#33b1ff, 20%);
+}
+
+@font-face {
+  font-family: 'VictorMono Nerd Font';
+  src: url("editor-fonts/VictorMonoNerdFont-Regular.ttf");
+}
+
+.root {
+  -fx-font-size: 16px;
+  -fx-font-family: 'VictorMono Nerd Font';
+}
+
+.tree-cell:filled {
+  -fx-padding: 2;
+}
